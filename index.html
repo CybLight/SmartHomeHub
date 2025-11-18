@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
     <title>Smart Home Hub</title>
-    <link rel="stylesheet" href="styles/smarthomehub.css" />
+    <link rel="stylesheet" href="./css/smarthomehub.css" />
   </head>
   <body>
     <header>
       <nav>
-        <img
-          src="media/images/Logo.svg"
-          alt="Smart Home Hub Logo"
-          class="logo"
-        />
+        <a href="/">
+          <img
+            src="media/images/Logo.svg"
+            alt="Smart Home Hub Logo"
+            class="logo"
+          />
+        </a>
         <ul class="buttons">
-          <li><a class="button" href="/index.html">Главная</a></li>
-          <li><a class="button" href="#">Проекты</a></li>
-          <li><a class="button" href="#">Arduino</a></li>
+          <li><a class="button" href="/">Главная</a></li>
+          <li><a class="button" href="#projects">Проекты</a></li>
+          <li><a class="button" href="#arduino">Arduino</a></li>
           <li><a class="button" role="button" href="#">О нас</a></li>
         </ul>
         <!-- Выбор языка и Поиск-->
@@ -29,17 +31,17 @@
 
     <main>
       <section>
-        <h2>Управляйте своими устройствами</h2>
+        <h2 class="hero-title"><span class="accent">Управляйте</span> своими <span class="accent-2">устройствами</span></h2>
         <p>
           Управляйте всеми устройствами умного дома с одного центрального хаба
         </p>
       </section>
       <section>
-        <h2>Настройка</h2>
+        <h2 class="section-title">Настройка</h2>
         <p>Настройте свой умный дом с помощью различных настроек</p>
       </section>
-      <section>
-        <h2>Проекты</h2>
+      <section id="projects">
+        <h2 class="section-title">Проекты</h2>
         <p>
           Исследуйте различные проекты умного дома, которые вы можете создать
         </p>
@@ -66,7 +68,7 @@
           </li>
           <li>
             <article>
-              <h3>Умный сад</h3>
+              <h3 class="section-title">Умный сад</h3>
               <p>Автоматизируйте полив и уход за вашим садом</p>
             </article>
           </li>
@@ -78,8 +80,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Arduino</h2>
+      <section id="arduino">
+        <h2 class="section-title">Arduino</h2>
         <p>Сенсоры и модули для умного дома</p>
         <ul>
           <li>
@@ -111,11 +113,19 @@
             <div>
               <div>
                 <div class="footer-copyright">
-                  <p>Copyright © 2025 Smart Home Inc</p>
+                  <p>Copyright &copy; 2025 Smart Home Inc</p>
                 </div>
                 <div>
                   <p>Сайт на 100% сделан из вторично переработанного кода</p>
                 </div>
+
+                <a href="#">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a>
+                &nbsp;|&nbsp;
+                <a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                &nbsp;|&nbsp;
+                <a href="#" class="jsPrivacySettings noJSHide"
+                  >НАСТРОЙКИ КОНФИДЕНЦИАЛЬНОСТИ</a
+                >
               </div>
             </div>
           </div>

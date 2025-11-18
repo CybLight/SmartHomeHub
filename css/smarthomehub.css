@@ -1,0 +1,175 @@
+/* Определение цветовых переменных */
+:root {
+  --primary-dark: #333333;
+  --primary-color: #1e905d;
+  --secondary-color: #0efff3;
+  --accent-color: #f1c40f;
+  --button-background: #333;
+  --button-hover-background: #1e905d;
+  --button-active-background: #f1c40f;
+  --button-text-color: #fff;
+}
+
+/* Основные стили для тела документа */
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+/* Стили для заголовка и навигации */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 150px;
+  display: block;
+}
+
+/* Стили для кнопок навигации */
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.button:active {
+  background-color: var(--accent-color);
+}
+
+/* Новые стили для заголовков */
+
+.hero-title {
+  color: var(--accent-color);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.hero-title .accent {
+  color: var(--primary-color);
+}
+
+.hero-title .accent-2 {
+  color: var(--secondary-color);
+}
+
+/* Стили для секций */
+
+section {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Стили для списков */
+
+ul {
+  list-style-type: none;
+}
+
+/* Стили для подвала */
+
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Дополнительные стили */
+
+/*.side-by-side {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.data {
+  padding: 10px;
+  background-color: #c3e6cb;
+}
+
+.man-content {
+  padding: 10px;
+  background-color: #c3e6cb;
+}
+
+.language-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+} 
+*/
+
+/* Адаптивные стили для мобильных устройств */
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .body {
+    display: flex;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+}
